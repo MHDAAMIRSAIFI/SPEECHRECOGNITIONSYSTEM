@@ -1,0 +1,14 @@
+import speech_recognition as sr
+import webbrowser
+import pyttsx3
+
+recognizer = sr.Recognizer()
+engine = pyttsx3.init()
+
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
+
+if __name__ == "__main__":
+    print("Running main...")
+    speak("Hello sir, good morning. I hope you are doing well today. Thank you for giving me the opportunity to present my project. I truly respect your time and responsibility in evaluating students. I appreciate your patience while reviewing my work. A calm and positive environment helps me explain my ideas with clarity and confidence. Your encouraging presence motivates me to perform better. I assure you that I have worked sincerely and honestly on this project. I am open to constructive feedback and eager to improve my skills. Your guidance and experience are valuable to my learning journey. I hope my work reflects the effort I have put into it. Thank you for your support and understanding. I wish you continued success and positivity in your professional life")
